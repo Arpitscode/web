@@ -1,0 +1,523 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration:none;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 13%;
+}
+
+/* ------------header css------------ */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.log img {
+    width: 100px;
+    height: auto;
+    transition: all 1s ease;
+    /* filter: drop-shadow(0px 0px 20px black); */
+}
+
+.header-icon img {
+    width: 30px;
+}
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    font-weight: 900;
+    padding: 25px 50px;
+    transition: all 1s ease;
+}
+
+.navbar a:hover{
+    color: rgb(255, 0, 255);
+}
+
+.header-icon {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon img {
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.login.show {
+    right: 13%;
+    /* display: block;(Optional) */
+}
+
+.log img:hover,.header-icon img:hover {
+    transform: scale(1.2);
+}
+
+.login {
+    /* background: linear-gradient(rgb(183, 3, 189), rgb(153, 5, 128)); */
+    background: #be00af4d;
+    border-radius: 30px;
+    backdrop-filter: blur(13px);
+    box-shadow: 0px 0px 10px black;
+    position: absolute;
+    border: none;
+    top: 90px;
+    right: -100%;
+    width: 250px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+    /* display: none; (optional)*/
+}
+
+.login input,
+.login button {
+    padding: 5px 9px;
+    outline: none;
+    border: 2px solid rgb(172, 14, 164);
+    border-radius: 30px;
+    transition: all 1s ease;
+}
+
+.login button {
+    transition: all 1s ease;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: none;
+    background: radial-gradient(rgb(219, 3, 208), rgb(160, 3, 147));
+}
+
+.login button:hover {
+    color: rgb(255, 255, 255);
+    background: radial-gradient(rgb(102, 102, 102), rgb(53, 53, 53));
+}
+
+.menu {
+    display: none;
+}
+
+header.sticky {
+    transition: all 1s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px black;
+    padding: 0px 10%;
+}
+
+/* ------------------------------------------------- */
+/* -------------- home section css ------------------*/
+.home {
+    background: radial-gradient(pink, purple);
+    position: relative;
+    height:100vh;
+    width: 100%;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+}
+
+.home-text h1 {
+    font-size: 5rem;
+    margin: 15px 0 5px;
+}
+
+
+.home-text h4 {
+    font-size: 2rem;
+    margin-bottom: 13px;
+    font-weight: 900;
+}
+
+.home-text h2 {
+    font-size: 3rem;
+    font-weight: 1000;
+    margin-bottom: 13px;
+}
+
+.home-text p {
+    color: rgb(73, 46, 78);
+    font-size: 1rem;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+.user-name form {
+    width: 100%;
+    position: relative;
+    animation: updown 1s ease-in-out alternate infinite;
+}
+
+.user-name form.stop {
+    animation: none;
+}
+
+.user-name form input {
+    color: rgba(151, 4, 156, 0.966);
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    border: 3px solid rgba(222, 1, 230, 0.966);
+    padding: 20px 10px 20px 40px;
+    border-radius: 30px;
+}
+.btn{
+    color: white !important;
+    padding: 20px !important;
+    width:35% !important;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 30px;
+    padding: 22px 35px;
+    border: none;
+    background: linear-gradient(rgb(226, 43, 226), rgb(255, 0, 191));
+    transition:all 1s ease;
+}
+.userbtn{
+    border-radius: 30px;
+    padding: 22px 35px;
+    border: none;
+    background: linear-gradient(rgb(226, 43, 226), rgb(255, 0, 191));
+    transition:all 1s ease;
+}
+
+.userbtn:hover,.btn:hover {
+    background: radial-gradient(rgb(134, 1, 117), rgb(255, 1, 192));
+    cursor: pointer;
+}
+
+.home-img img {
+    width: 85%;
+    height: auto;
+    max-width: 90%;
+    animation: updown 4s ease alternate infinite;
+}
+
+/* ------------------------------------------------- */
+/* -------------- Service section css ------------------*/
+.service{
+    padding-bottom:0;
+}
+.service-heading{
+    color: rgb(0, 0, 0);
+    font-weight: 1000;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.service-heading h1{
+    transition: all 2s ease;
+}
+.service-heading h1:hover{
+    color: rgb(255, 0, 212);
+    text-shadow: 2px 3px 10px rgb(78, 78, 78) ;
+}
+.srbtn{
+  font-size:14px !important;
+  border: none;
+  
+  padding:10px 10px !important;
+}
+.info {
+    /* background-color: black; */
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card {
+    padding: 13px 10%;
+    border-radius: 25px;
+    text-align: center;
+    width:100%;
+    height:100%;
+    background:radial-gradient(rgb(247, 0, 255),rgb(148, 0, 116));
+    transition: all 1s ease;
+    animation: card  3s linear  infinite alternate ;
+}
+.info-card img {
+    width: 65%;
+    filter: drop-shadow(0px 0px 20px rgb(197, 197, 197));
+}
+
+.infobtn {
+    width: 80px;
+    border:none;
+    padding: 10px 10px;
+    background: linear-gradient(purple, pink);
+    border-radius: 30px;
+    transition: all 1s ease;
+}
+
+.infobtn:hover {
+    color: white;
+    background: linear-gradient(rgb(32, 1, 32), rgb(95, 0, 95));
+}
+/* ------------------------------------------------- */
+/* -------------- About section css ------------------*/
+.about-text{
+   text-align: center;
+}
+.about-text h2{
+     font-size: 30px;
+     font-weight: 700;
+     padding: 25px ;
+}
+.about-text p{
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom:13px;
+}
+.about-text h4{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+.about-text h5{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.aboutbtn,.srbtn{
+    color: rgb(0, 0, 0);
+    padding: 10px 35px;
+    font-size: 20px;
+    border-radius: 30px;
+    background:linear-gradient(rgb(232, 4, 240),gray) ;
+    box-shadow: 0px 5px 10px black;
+    transition: all 1s ease ;
+}
+.aboutbtn:hover,.srbtn:hover{
+    color: rgb(209, 207, 207);
+    box-shadow: 0px 2px 3px black;
+    background:linear-gradient(rgb(176, 1, 182),rgb(85, 85, 85)) ;   
+}
+.lm{
+  text-decoration:underline;
+}
+.more{
+    display: none;
+}
+.more.see{
+    display:block;
+    margin-top: 20px;
+}
+/* ------------------------------------------------- */
+/* -------------- Contract section css ------------------*/
+.contract {
+    background: rgb(0, 0, 0);
+    padding: 60px 13%;
+}
+
+.main-contract {
+    display: flex;
+}
+
+.contract-cont img {
+    filter: drop-shadow(0px 0px 10px rgba(230, 4, 211, 0.829));
+    height: auto;
+    width: 200px;
+    max-width: 100%;
+    transition: all 1s ease;
+}
+.contract-cont img:hover{
+    transform: scale(1.3);
+}
+#icon {
+    display: flex;
+    align-items: center
+}
+
+#icon img {
+    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
+    width: 35px;
+    margin: 15px;
+}
+#icon a:hover{
+    transition: all 1s ease;
+   transform: none;
+   transform: translateY(-20px);
+}
+#icon img:hover{
+    filter: drop-shadow(0px 0px 5px rgb(148, 2, 128));
+}
+.contract-cont li {
+    margin-bottom: 18px;
+}
+
+.contract-cont li a {
+    letter-spacing: 1px;
+    display: block;
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 1s ease;
+}
+
+.contract-cont li a:hover {
+    transform: translateX(10px);
+    color: rgb(148, 2, 128);
+    text-shadow: 0px 0px 10px rgb(148, 2, 128), 0px 0px 20px rgb(148, 2, 128);
+}
+
+.main-contract {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+}
+
+/* ------------------------------------------------- */
+/* -------------- Last-div section css ------------------*/
+.last-text {
+    background: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(148, 2, 128);
+    letter-spacing: 2px;
+    padding: 18px;
+    font-size: 17px;
+    font-weight: 900;
+    text-shadow: 0px 0px 10px rgb(148, 2, 128), 0px 0px 20px rgb(148, 2, 128);
+}
+
+/* ------------------------------------------------- */
+/* -------------- Animaton section css ------------------*/
+@keyframes updown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        filter: drop-shadow(-2px 7px 8px rgb(66, 1, 63));
+    }
+
+    50% {
+        filter: drop-shadow(-5px 15px 13px rgb(66, 1, 63));
+    }
+
+    100% {
+        transform: translateY(-15px);
+        filter: drop-shadow(-7px 20px 16px rgb(66, 1, 63));
+    }
+}
+@keyframes card {
+    0% {
+        transform: rotate3d(0,12,0,30deg);
+        box-shadow: 20px -2px 25px 1px black;
+    }
+    50%{
+        transform: rotate3d(0,0,0,0deg);
+        box-shadow: none;
+    }
+    100% {
+        transform: rotate3d(0,-12,0,-30deg);
+        box-shadow: -20px -2px 25px 1px black;
+    }
+}
+
+/* ------------------------------------------------- */
+/* --------------Responsive section css ------------------*/
+@media (max-width:1200px) {
+    .info{
+    }
+}
+@media (max-width:1020px) {
+  
+    .home-text h1{
+        font-size: 4rem;
+    }
+    .home-text h2{
+       font-size: 2.5rem;
+    }
+    .menu {
+        transition: all 1s ease;
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 45%;
+        height: auto;
+        /* background: red; */
+        background-color: #be00af4d;
+        backdrop-filter: blur(15px);
+        box-shadow: 0px 0px 10px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+        transition: all .40s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1.3rem 0;
+        color: black;
+    }
+
+    .navbar a:hover {
+        color: rgb(223, 18, 18);
+        transform: translateY(-5px);
+    }
+
+    .navbar.open {
+        right: 0;
+    }
+     
+    /* home section */
+    .home {
+        height:auto;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .home-img {
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0% auto;
+        width:80%;
+    }
+}
+@media (max-width:395px){
+    .user-name form input{
+        transition: all 1s ease;
+        padding: 20px 10px 20px 20px
+    }
+}
+/* ------------------------------------------------- */
